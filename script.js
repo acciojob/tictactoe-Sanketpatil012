@@ -45,7 +45,7 @@
 
             // Check for a winner
             if (checkWinner()) {
-                document.getElementById("turnMessage").innerText = `${currentPlayer} congratulations, you won! 🎉`;
+                document.getElementById("turnMessage").innerText = `${player1===currentPlayer ? "player1 wins" : "player2 wins"  }`;
                 setTimeout(resetGame, 2000); // Reset game after a short delay
                 return;
             }
